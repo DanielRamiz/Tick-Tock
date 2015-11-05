@@ -27,6 +27,7 @@ function clockTime($scope) {
           clearInterval(refreshIntervalId);
         }else{
           alarm_counter = alarm_counter - 1000;
+          console.log(alarm_counter);
         }
 
         $scope.$apply();
