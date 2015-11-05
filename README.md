@@ -1,10 +1,3 @@
-# DevTips-Starter-Kit Gulp Version
-
-Use this as a simple structure for a simple start to a simple site.
-
-Visit [DevTipsStarterKit.com/](http://devtipsstarterkit.com) for more info.
-
-![Watch the video on youtube](https://github.com/DevTips/DevTips-Starter-Kit/blob/master/assets/img/starter-kit-cover.jpg?raw=true)
 
 ## Requeriments
 This project have some requeriments you need to meet in order to compile it. First of all you need NodeJS in order to run javascript on the console, you can go to the [NodeJS](http://nodejs.rg) site and follow trough the installation process. After you get the `node` command on the console, you need to install Gulp and Bower globally with the following command.
