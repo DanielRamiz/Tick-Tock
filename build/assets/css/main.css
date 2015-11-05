@@ -1,0 +1,78 @@
+body {
+  background: #dbe4e6;
+}
+
+.jumbotron {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.vertical-center {
+  min-height: 100%;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.box {
+  min-width: 400px;
+  min-height: 300px;
+  background: white;
+}
+
+.boxform {
+  text-align: center;
+}
+
+.boxform .row form {
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.cardform {
+  margin: 0px auto;
+}
+
+.mainbox {
+  width: 320px;
+  height: 130px;
+  background: #dddddd;
+  border-radius: 3px;
+  margin: 0px auto;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.tiempo {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-top: 40px;
+}
+
+.tiempo label {
+  font-family: 'Revalia', cursive;
+  font-size: 38px;
+  color: black;
+}
+
+.tiempo p {
+  font-family: 'Revalia', cursive;
+  margin-top: 22px;
+}

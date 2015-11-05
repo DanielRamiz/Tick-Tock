@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html ng-app="Ctrl" lang="en"></html>
+<head>
+  <title>Tick Tack</title>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <link rel="stylesheet" href="assets/css/main.css"/>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Revalia"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/css/materialize.min.css"/>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"/>
+</head>
+<body>
+  <div class="row">
+    <div class="center-block jumbotron">
+      <div ng-controller="timeController" class="vertical-center">
+        <div class="box card">
+          <div class="row cardform">
+            <div class="boxform">
+              <form>
+                <div class="col-sm-4"><i class="fa fa-clock-o fa-3x"></i></div>
+                <div style="padding: 0 30px;" class="col-sm-4 control input-field">
+                  <div class="input-field">
+                    <select id="selector">
+                      <option value="1">1 Minute</option>
+                      <option value="2">2 Minute</option>
+                      <option value="3">3 Minute</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-sm-4 switch">
+                  <label>Off
+                    <input type="checkbox" id="alarm-btn" ng-model="checkOn.value" ng-change="change()"/><span class="lever"> </span>On
+                  </label>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="mainbox grey lighten-1">
+            <div class="row tiempo">
+              <div class="col-sm-2">
+                <label>{{hora}}</label>
+              </div>
+              <div class="col-sm-2">
+                <label>:</label>
+              </div>
+              <div class="col-sm-2">
+                <label>{{Minutes}}</label>
+              </div>
+              <div class="col-sm-2">
+                <label>: </label>
+              </div>
+              <div class="col-sm-2">
+                <label>{{Seconds}}</label>
+              </div>
+              <div class="col-sm-2">
+                <p>{{mid}}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <audio id="alarm-ring">
+    <source src="assets/img/ticktac.mp3" type="audio/mpeg"/>
+    <source src="assets/img/ticktac.ogg" type="audio/ogg"/>
+  </audio>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script>
+  <script src="./vendors/jquery/dist/jquery.min.js"></script>
+  <script src="./assets/js/app.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/js/materialize.min.js"></script>
+</body>

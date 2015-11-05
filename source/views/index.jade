@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+html(ng-app="Ctrl" lang="en")
+head
+  title Tick Tack
+  meta(charset="UTF-8")
+  meta(name="viewport", content="width=device-width, initial-scale=1")
+  link(rel="stylesheet", href="assets/css/main.css")
+  link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Revalia") 
+  link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/css/materialize.min.css")  
+  link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css") 
+
+body
+  
+  
+  .row
+    .center-block.jumbotron
+
+      div.vertical-center(ng-controller="timeController")
+        .box.card
+          .row.cardform
+            .boxform
+            
+              form
+                .col-sm-4
+                  i.fa.fa-clock-o.fa-3x
+                .col-sm-4.control.input-field(style="padding: 0 30px;")
+                  .input-field
+                    select(id="selector")
+                      option(value="1") 1 Minute
+                      option(value="2") 2 Minute
+                      option(value="3") 3 Minute
+                    
+                .col-sm-4.switch
+                  label Off
+                    input(type="checkbox" id="alarm-btn" ng-model="checkOn.value" ng-change="change()")
+                    span.lever 
+                    | On
+                
+          
+          .mainbox.grey.lighten-1
+            .row.tiempo
+              .col-sm-2
+                label{{hora}}
+              .col-sm-2
+                label :
+              .col-sm-2
+                label {{Minutes}}
+              .col-sm-2
+                label : 
+              .col-sm-2
+                label {{Seconds}}
+              .col-sm-2
+                p {{mid}}
+
+  audio(id="alarm-ring")
+      source(src="assets/img/ticktac.mp3" type="audio/mpeg")
+      source(src="assets/img/ticktac.ogg" type="audio/ogg")
+    
+
+
+              
+               
+              
+              
+              
+              
+
+  script(src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js")
+  script(src="./vendors/jquery/dist/jquery.min.js")
+  script(src="./assets/js/app.js")
+  script(src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/js/materialize.min.js")
