@@ -9,9 +9,9 @@ node install -g gulp bower
 Gulp is the one that will run all the task of compilation, watchers and others. Bower will get the dependencies for the client side like jQuery. Those are the only requeriments to run this project.
 
 ## Install
-In order to start using the project you need to clone it to your pc. You can download the the zip version from [here](https://github.com/mriverodorta/DevTips-Starter-Kit/archive/Gulp-Starter-Kit.zip) or clone the project with the git command.
+In order to start using the project you need to clone it to your pc. Clone the project with the git command.
 ```
-git clone -b Gulp-Starter-Kit https://github.com/mriverodorta/DevTips-Starter-Kit.git new-project
+git clone -b Gulp-Starter-Kit https://github.com/DanielRamiz/Tick-Tock.git new-project
 ```
 After you have it on you pc, you need to go in the console to the project folder and execute the following command to gather all the dependencies.
 ```
