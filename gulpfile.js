@@ -9,6 +9,7 @@ var $ = require('gulp-load-plugins')({ lazy: true });
 var browsersync = require('browser-sync');
 var del = require('del');
 var config = require('./config.js')();
+var deploy      = require('gulp-gh-pages');
 
 // Configs
 var
@@ -74,6 +75,14 @@ gulp.task('clean', function () {
   del([
     dest + '*'
   ]);
+});
+
+/**
+ * Push build to gh-pages
+ */
+gulp.task('deploy', function () {
+  return gulp.src("./dist/**/*")
+    .pipe(deploy())
 });
 
 // Compile Javascript files
